@@ -6,9 +6,19 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/checkout" element={<h1>Checkout</h1>} />
+          <Route path="/checkout" element={
+            <>
+             <Header /> 
+              <h1>CheckOut</h1>  
+            </>
+          }/>
           <Route path="/login" element={<h1>Login</h1>} />
-          <Route path="/" element={ <Header/>} />
+          <Route path="/" element={
+            <>
+              <Header /> 
+              <h1>Home Page</h1>
+            </>
+          }/>
         </Routes>
       </div>
     </Router>
