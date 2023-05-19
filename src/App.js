@@ -1,4 +1,6 @@
 import React from 'react';
+import Home from './Home';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 function App() {
@@ -16,7 +18,7 @@ function App() {
           <Route path="/" element={
             <>
               <Header /> 
-              <h1>Home Page</h1>
+              <Home />
             </>
           }/>
         </Routes>
