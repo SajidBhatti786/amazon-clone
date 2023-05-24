@@ -19,7 +19,9 @@
 }
 .product__info{
  height: 100px;
- margin-bottom: 0px;
+ margin-bottom: 20px;
+ padding: 10px;
+
 }
 .product__info h3{
  margin-bottom: 5px;
@@ -50,4 +52,7 @@
 }
 .product > button:hover{
  box-shadow: 0 0 5px 0px #111;; 
+}
+.star{
+ border: none;
 }

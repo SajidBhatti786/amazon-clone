@@ -1,20 +1,21 @@
 import React from 'react';
 import './Product.css';
 function Product(props) {
+  console.log(props)
   return (
     <div className='product'>
     <div className='product__info'>
-     <h3>The Lean Startup</h3>
+        <p>{props.title}</p>
      <p className='product__price'>
       <small>$</small>
-      <strong>19.99</strong>
+      <strong>{props.price }</strong>
      </p>
      <div className='product__rating'>
-          <span class="star">&#x2605;</span>
-          <span class="star">&#x2605;</span>
-          <span class="star">&#x2605;</span>
-          <span class="star">&#x2605;</span>
-          <span class="star">&#x2605;</span>          
+          <p>⭐</p>
+          <p>⭐</p>
+          <p>⭐</p>
+          <p>⭐</p>
+          <p>⭐</p>
      </div>
       </div>
       <img src={props.imgUrl} />
